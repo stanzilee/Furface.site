@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pets"
+    label: "Pets"
+    folder: "pets"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "feed"
+    label: "Pet Feed"
+    folder: "feed"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "accessories"
+    label: "Accessories"
+    folder: "accessories"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
